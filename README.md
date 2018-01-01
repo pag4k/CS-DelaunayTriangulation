@@ -45,7 +45,7 @@ for (int i = 0; i < pairs.Length; i++) {
 
 ## Example
 
-![Delaunay triangulation with Voronoi diagram example](relative/path/to/Delaunay-Voronoi.jpg?raw=true "Delaunay triangulation with Voronoi diagram example.")
+![Delaunay triangulation with Voronoi diagram example](Delaunay-Voronoi.jpg?raw=true "Delaunay triangulation with Voronoi diagram example.")
 
 ## Authors
 
