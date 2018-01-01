@@ -1,10 +1,10 @@
 # CS-DelaunayTriangulation
 
-A simple C# library that generates 2D Delaunay triangulations from generic types. It is based a sweepline algorithm were triangles are processed from left to right.
+A simple C# library that generates 2D Delaunay triangulations from generic types. It is based a sweep line algorithm were triangles are processed from left to right.
 
 ## Getting Started
 
-These instructions will explain how to integrate this library to your project. The examples are from Unity.
+These instructions will explain how to integrate this library into your project. The examples are from Unity.
 
 ### Installing
 
@@ -23,19 +23,19 @@ public class Asteroid : MonoBehaviour, IPosition {
 // [...]
 }
 ```
-4. Create and instantitate a Delauny object. Make sure to specify the class implementing IPosition as the generic type and to pass an  array of the that type as parameter.
+4. Create and instantiate a Delaunay object. Make sure to specify the class implementing IPosition as the generic type and to pass an array of that type as a parameter.
 ```
 Delaunay<Asteroid> triangulation;
 triangulation = new Delaunay<Asteroid>(GameObject.FindObjectsOfType<Asteroid> ());
 ```
-5. If you want the Delaunay triangulation. Get the object pairs forming the the Delaunay triangulation. Make sure to create the proper data structure to receive the data. The following example draws debug lines.
+5. If you want the Delaunay triangulation. Get the object pairs forming the Delaunay triangulation. Make sure to create the proper data structure to receive the data. The following example draws debug lines.
 ```
 Asteroid[][] delaunayPairs = triangulation.GetDelaunayPairs();
 for (int i = 0; i < delaunayPairs.GetLength(0); i++) {
     UnityEngine.Debug.DrawLine (delaunayPairs [i][0].transform.position, delaunayPairs [i][1].transform.position, Color.green, 60f);
 }
 ```
-6. If you want the Voronoi diagram. Get the pairs of coordinates formaing the Voronoi diagram. Again, make sure to create the proper data structure to receive the data. The following example draws debug lines.
+6. If you want the Voronoi diagram. Get the pairs of coordinates forming the Voronoi diagram. Again, make sure to create the proper data structure to receive the data. The following example draws debug lines.
 ```
 float[][][] voronoiPairs = triangulation.GetVoronoiPairs();
 for (int i = 0; i < pairs.Length; i++) {x
@@ -53,8 +53,8 @@ for (int i = 0; i < pairs.Length; i++) {x
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for xxxxxxxxdfsdsdsd
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
-## Acknowledgmentsxxx
+## Acknowledgments
 
 * Thanks to Sjaak Priester (https://www.codeguru.com/cpp/cpp/algorithms/general/article.php/c8901/Delaunay-Triangles.htm).
