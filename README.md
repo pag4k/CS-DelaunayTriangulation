@@ -1,6 +1,6 @@
 # CS-DelaunayTriangulation
 
-A simple C# library that generates 2D Delaunay triangulations from generic types.
+A simple C# library that generates 2D Delaunay triangulations from generic types. It is based a sweepline algorithm were triangles are processed from left to right.
 
 ## Getting Started
 
@@ -38,7 +38,7 @@ for (int i = 0; i < delaunayPairs.GetLength(0); i++) {
 6. If you want the Voronoi diagram. Get the pairs of coordinates formaing the Voronoi diagram. Again, make sure to create the proper data structure to receive the data. The following example draws debug lines.
 ```
 float[][][] voronoiPairs = triangulation.GetVoronoiPairs();
-for (int i = 0; i < pairs.Length; i++) {
+for (int i = 0; i < pairs.Length; i++) {x
     UnityEngine.Debug.DrawLine (new Vector3(voronoiPairs[i][0][0],voronoiPairs[i][0][1]), new Vector3(voronoiPairs[i][1][0],voronoiPairs[i][1][1]), Color.red, 60f);
     }
 ```
@@ -53,11 +53,8 @@ for (int i = 0; i < pairs.Length; i++) {
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for xxxxxxxxdfsdsdsd
 
-## Acknowledgments
+## Acknowledgmentsxxx
 
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
-
+* Thanks to Sjaak Priester (https://www.codeguru.com/cpp/cpp/algorithms/general/article.php/c8901/Delaunay-Triangles.htm).
