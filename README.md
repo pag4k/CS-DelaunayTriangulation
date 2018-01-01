@@ -39,24 +39,13 @@ for (int i = 0; i < delaunayPairs.GetLength(0); i++) {
 ```
 float[][][] voronoiPairs = triangulation.GetVoronoiPairs();
 for (int i = 0; i < pairs.Length; i++) {
-			UnityEngine.Debug.DrawLine (new Vector3(voronoiPairs[i][0][0],voronoiPairs[i][0][1]), new Vector3(voronoiPairs[i][1][0],voronoiPairs[i][1][1]), Color.red, 60f);
+    UnityEngine.Debug.DrawLine (new Vector3(voronoiPairs[i][0][0],voronoiPairs[i][0][1]), new Vector3(voronoiPairs[i][1][0],voronoiPairs[i][1][1]), Color.red, 60f);
     }
 ```
-A step by step series of examples that tell you have to get a development env running
 
-Say what the step will be
+## Examples
 
-```
-Give the example
-```
 
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
 
 ## Authors
 
