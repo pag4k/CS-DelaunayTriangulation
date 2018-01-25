@@ -1,6 +1,6 @@
 # CS-DelaunayTriangulation
 
-A simple C# library that generates 2D Delaunay triangulations from generic types. It is based a sweep line algorithm were triangles are processed from left to right.
+A simple C# library that generates 2D Delaunay triangulations from generic types. It is based on a sweep line algorithm where triangles are processed from left to right.
 
 ## Getting Started
 
@@ -8,7 +8,7 @@ These instructions will explain how to integrate this library into your project.
 
 ### Installing
 
-1. Download and add all the files in /DelaunayTriangulation to your projet.
+1. Download and add all the files in /DelaunayTriangulation to your project.
 2. Import the library to the .cs files where it will be used.
 ```
 using DelaunayTriangulation;
